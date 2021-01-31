@@ -7,50 +7,21 @@
 # Ignore bundler config.
 /.bundle
 
-# Ignore the default SQLite database.
-/db/*.sqlite3
-/db/*.sqlite3-journal
-
 # Ignore all logfiles and tempfiles.
-/log/*.log
-/tmp
-.rbenv-vars
-.powder
+/log/*
+/tmp/*
+!/log/.keep
+!/tmp/.keep
 
-public/system
+# Ignore uploaded files in development
+/storage/*
+!/storage/.keep
 
-public/assets
-public/sitemap.*
-
-# Sublime stuff
-*.sublime-project
-*.sublime-workspace
-
-# Static analysis
-brakeman.html
-
-# CTags
-.tags
-.tags_sorted_by_file
-
-vendor/assets/bower_components
-.env.local
-.env.test.local
-.DS_Store
-.rubocop-*
-
-.vscode
-.docker-sync
-
-.docker/docker-credential-gcr*
-myslq/*.surbtc_dump_pruned.sql.gz
-.idea
-
-*.swp
-
-/public/packs
-/public/packs-test
 /node_modules
 /yarn-error.log
-yarn-debug.log*
-.yarn-integrity
+
+/public/assets
+.byebug_history
+
+# Ignore master key for decrypting credentials and more.
+/config/master.key
